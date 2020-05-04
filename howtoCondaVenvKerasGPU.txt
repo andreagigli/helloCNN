@@ -1,0 +1,27 @@
+How to create Anaconda virtual environment to work with Keras-GPU (Tensorflow backend)
+Based on https://towardsdatascience.com/installing-keras-tensorflow-using-anaconda-for-machine-learning-44ab28ff39cb : 
+* Download and install Anaconda
+* Create virtual environment with python 3.6 (compatible with keras): conda create --name PythonGPU python=3.6
+* conda activate pythonGPU
+* conda install -c anaconda keras
+* install keras-gpu after keras (cpu). GPU will be automatically used, if compatible: conda install -c anaconda keras-gpu
+
+Install auxiliary modules: 
+* conda install pillow
+* conda install -c anaconda pandas
+* conda install -c anaconda pandas
+* conda install -c anaconda xlrd
+* conda install -c anaconda xlwt
+* conda install -c anaconda seaborn
+* conda install -c anaconda scikit-learn
+
+* If any package is missing, install it using "conda install pckgName" in the conda environment. 
+
+
+To use the python interpreter from this virtual environment in Pycharm:
+* in anaconda prompt -> conda env list -> copy path of pythonGPU environment -> the python interpreter of that environment is path\python.exe
+* in pycharm -> settings -> project interpreter -> select python interpreter of the environment pythonGPU 
+* if the interpreter is not there -> click on the tool symbol (top-right) -> show all -> remove corrupted interpreters (if any) -> add symbol -> conda environment -> existing environment -> paste the path to the interpreter -> make available for other projects 
+
+
+NOTE: this procedure should make all the new modules installed from pycharm directly available in the conda environment. To avoid potential conflicts I prefer installing all the new packages from anaconda prompt. 
