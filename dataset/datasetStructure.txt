@@ -1,0 +1,12 @@
+- training set
+-- folder images class 1
+-- folder images class 2
+-- folder images class 3
+-- ...
+- test set
+-- folder images class 1
+-- folder images class 2
+-- folder images class 3
+-- ...
+
+example dataset from https://www.superdatascience.com/pages/deep-learning link https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/P16-Convolutional-Neural-Networks.zip
